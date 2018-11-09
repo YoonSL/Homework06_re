@@ -1,0 +1,207 @@
+body{
+    height:100%
+}
+main{
+    height:100%;
+}
+.grid{
+    display:grid;
+    position:fixed;
+    top:120px;
+    grid-template-rows: 80px 100%;
+    grid-template-columns: repeat(2,1fr);
+    width:100vw;
+}
+
+header{
+    width:100%;
+    background-image: linear-gradient(120deg,rgb(167, 23, 95),purple);
+}
+.gridAtt{
+    height:30px;
+    display:grid;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.box{
+    display: grid;
+    align-content: center;
+    justify-content: left;
+
+}
+.gridNew{
+    display:grid;
+    position:relative;
+    left: -30px;
+    grid-template-columns: 30px 280px 30px;
+    padding-top:2px;
+    width: 300px;
+    height: 100%;
+}
+#buttonGo{
+    position:absolute;
+    right:16px;
+    top:8px;
+    background:none;
+    border:none;
+    color:rgb(13, 37, 173);
+
+}
+#mainTitle{
+    position:fixed;
+    color:white;
+    font-weight: lighter;
+    padding:20px;
+    font-size: 40px;
+    
+}
+/* .todoGrid{
+    display:flex;
+    width :300px;
+    grid-template-rows: repeat(3,1fr);
+} */
+.checkTodo{
+    position:relative;
+    left: 0px;
+}
+.deleteTodo{
+    position:relative;
+    left: 53px;
+    bottom: 0px;
+}
+.textTodo{
+    position:relative;
+    left: 0px;
+    bottom: 0px;
+}
+.fa-check-square{
+    display:block;
+    content: "\f14a";
+}
+
+#add{
+    position:relative;
+    left:27px;
+    width:300px;
+    height:19px;
+    margin-left:15px;
+    border-top : 1px rgb(167, 23, 95) solid;
+    border-bottom: 1px purple solid;
+    border-left : 1px rgb(167, 23, 95) solid;
+    border-right: 1px purple solid;
+    border-radius: 10px;
+}
+.clear{
+    background:none;
+    border:none;
+}
+.span2{
+    grid-column: span 2;
+}
+
+
+
+@media only screen and (min-width:600px){
+
+    .grid{
+        display:grid;
+        /* position:fixed;
+        top:120px; */
+        grid-template-rows: 80px 100%;
+        grid-template-columns: 300px 100px;
+        width:362px;
+        height: 120vh;
+        position:relative;
+        left:300px;
+        border-collapse: separate;
+        border-top : 1px rgb(167, 23, 95) solid;
+        border-bottom: 1px purple solid;
+        border-left : 1px rgb(167, 23, 95) solid;
+        border-right: 1px purple solid;
+        border-radius: 10px;
+        /* border: 2px solid transparent;
+        border-image: linear-gradient(90deg,rgb(167, 23, 95),purple);
+        border-image-slice: 1;
+        -webkit-border-image-radius: 10px; 
+        -moz-border-image-radius: 10px; 
+        border-radius: 10px; */
+    }
+    .gridAtt{
+        height:30px;
+        display:grid;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    .box{
+        display: grid;
+        align-content: center;
+        justify-content: left;
+
+    }
+    .gridNew{
+        display:grid;
+        position:relative;
+        left: -30px;
+        grid-template-columns: 30px 280px 30px;
+        padding-top:2px;
+        width: 300px;
+        height: 100%;
+    }
+    #buttonGo{
+        background:none;
+        border:none;
+        color:rgb(13, 37, 173);
+    }
+    #mainTitle{
+        color:white;
+        font-weight: lighter;
+        padding:20px;
+        text-align: left;
+        font-size: 40px;
+    }
+    
+    #add{
+        position:relative;
+        left:12px;
+        bottom: -24px;
+        width:300px;
+        height:19px;
+        margin-left:15px;
+        border-top : 1px rgb(167, 23, 95) solid;
+        border-bottom: 1px purple solid;
+        border-left : 1px rgb(167, 23, 95) solid;
+        border-right: 1px purple solid;
+        border-radius: 10px;
+    }
+    #buttonGo{
+        position:absolute;
+        right:11px;
+        top:31px;
+        background:none;
+        border:none;
+        color:rgb(13, 37, 173);
+
+    }
+    .checkTodo{
+        display:inline-grid;
+        position:relative;
+        left: -0px;
+        bottom: 0px;
+    }
+    .deleteTodo{
+        display:inline-grid;
+        position:relative;
+        left: -3px;
+        bottom: 0px;
+    }
+    .textTodo{
+        display:inline-grid;
+        position:relative;
+        left: 0px;
+        bottom: 1px;
+    }
+    
+}
